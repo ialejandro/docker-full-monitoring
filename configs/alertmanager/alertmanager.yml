@@ -1,0 +1,26 @@
+global:
+  resolve_timeout: 5m
+  smtp_from: 'prometheus demo'
+  smtp_smarthost: 'localhost:25'
+  smtp_require_tls: false
+
+route:
+  group_by: ['alertname']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 1h
+  receiver: 'alert-emailer'
+
+inhibit_rules:
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['alertname', 'dev', 'instance']
+
+receivers:
+- name: alert-emailer
+  email_configs:
+  - to: 'receiver@domain.com'
+    send_resolved: false
+    from: 'demo@test.demo'

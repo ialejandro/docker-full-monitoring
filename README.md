@@ -58,7 +58,7 @@ sudo ./remove_stack.sh
 
 #### Dashboards
 
-**By default**, exists the Node Exporter dashboard (id: [1860|https://grafana.com/grafana/dashboards/1860]). If you want added new dashboards, use Grafana **provisioning** function to save the dashboards. Only need create `.json` file on `configs/grafana/dashboards` folder.
+**By default**, exists the Node Exporter dashboard (id: [1860](https://grafana.com/grafana/dashboards/1860). If you want added new dashboards, use Grafana **provisioning** function to save the dashboards. Only need create `.json` file on `configs/grafana/dashboards` folder.
 
 Check the currently `configs/grafana/provisioning` folders to see the demo configuration.
 
@@ -85,8 +85,8 @@ Check the currently `configs/grafana/provisioning` folders to see the demo confi
 
 ## Contributing
 
-Refer to [CONTRIBUTING.md|https://github.com/ialejandro/prometheus-stack/blob/master/CONTRIBUTING.md]
+Refer to [CONTRIBUTING.md](https://github.com/ialejandro/prometheus-stack/blob/master/CONTRIBUTING.md).
 
 ## License
 
-Apache License 2.0. Refer to [LICENSE|https://github.com/ialejandro/prometheus-stack/blob/master/LICENSE].
+Apache License 2.0. Refer to [LICENSE](https://github.com/ialejandro/prometheus-stack/blob/master/LICENSE).

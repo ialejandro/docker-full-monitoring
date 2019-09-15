@@ -30,7 +30,7 @@ sudo ./remove_stack.sh
 * **Image**: prom/prometheus:latest
 * **Port**: 9090
 * **Configuration**: `/srv/prometheus/prometheus.yml`
-* **Rules**: `/srv/prometheus/rules.d/demo.rules` (the files must be `.rules` extension)
+* **Rules**: `/srv/prometheus/rules.d/demo.yml`
 
 ### Alertmanager
 

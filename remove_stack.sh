@@ -11,11 +11,11 @@ if [[ ${EXIST} -ne 0 ]]; then
     exit 1
 fi
 
-# create dirs
+# remove
 rm -rf /srv/prometheus \
     /srv/alertmanager \
     /srv/grafana \
     /srv/blackbox_exporter
 
-# run docker-compose
+# remove docker-compose stack
 docker-compose -f prometheus-demo-stack.yml rm -s --force

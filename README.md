@@ -58,7 +58,7 @@ sudo ./remove_stack.sh
 
 #### Dashboards
 
-**By default**, exists the Node Exporter dashboard (id: [1860](https://grafana.com/grafana/dashboards/1860). If you want added new dashboards, use Grafana **provisioning** function to save the dashboards. Only need create `.json` file on `configs/grafana/dashboards` folder.
+**By default**, exists the Node Exporter dashboard (id: [1860](https://grafana.com/grafana/dashboards/1860)). If you want added new dashboards, use Grafana **provisioning** function to save the dashboards. Only need create `.json` file on `configs/grafana/dashboards` folder.
 
 Check the currently `configs/grafana/provisioning` folders to see the demo configuration.
 

@@ -19,16 +19,16 @@ It's only for develop environments and **learn how-to use Prometheus monitoring*
 * Started containers.
 
 ```bash
-sudo ./initialize_stack.sh
+$ sudo ./initialize_stack.sh
 ```
 
-### Remove stack
+### Remove Stack
 
 * Remove configs.
 * Stop and remove containers.
 
 ```bash
-sudo ./remove_stack.sh
+$ sudo ./remove_stack.sh
 ```
 
 ## Services
@@ -58,13 +58,13 @@ sudo ./remove_stack.sh
 
 #### Dashboards
 
-**By default**, exists the Node Exporter dashboard (id: [1860](https://grafana.com/grafana/dashboards/1860)). If you want added new dashboards, use Grafana **provisioning** function to save the dashboards. Only need create `.json` file on `configs/grafana/dashboards` folder.
+**By default** exists the Node Exporter dashboard (id: [1860](https://grafana.com/grafana/dashboards/1860)). If you want added new dashboards, use Grafana **provisioning** function to save the dashboards. Only need create `.json` file on `configs/grafana/dashboards` folder.
 
 Check the currently `configs/grafana/provisioning` folders to see the demo configuration.
 
 #### Datasources
 
-**By default**, exists the Prometheus datasource. If the dashboard uses another **datasource** -- non-default Prometheus datasource--, please, added on `datasources` the new `.yml` file.
+**By default** exists the Prometheus datasource. If the dashboard uses another **datasource** -- non-default Prometheus datasource--, please, added on `datasources` the new `.yml` file.
 
 Check the currently `configs/grafana/provisioning` folders to see the demo configuration.
 

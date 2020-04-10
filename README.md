@@ -1,6 +1,6 @@
-# Prometheus Stack
+# Docker: Prometheus + Alertmanager + Grafana
 
-Deploy a Prometheus stack with basic configuration ([Prometheus](https://prometheus.io/docs/introduction/overview/), [Alertmanager](https://prometheus.io/docs/alerting/alertmanager/), [Node Exporter](https://prometheus.io/docs/guides/node-exporter/), [Blackbox Exporter](https://github.com/prometheus/blackbox_exporter) and [Grafana](https://grafana.com/docs/)).
+Deploy a full monitoring stack with basic configuration ([Prometheus](https://prometheus.io/docs/introduction/overview/), [Alertmanager](https://prometheus.io/docs/alerting/alertmanager/), [Node Exporter](https://prometheus.io/docs/guides/node-exporter/), [Blackbox Exporter](https://github.com/prometheus/blackbox_exporter) and [Grafana](https://grafana.com/docs/)).
 
 It's only for develop environments and **learn how-to use Prometheus monitoring**.
 

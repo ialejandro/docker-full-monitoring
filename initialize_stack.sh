@@ -1,5 +1,4 @@
 #! /bin/bash
-
 if [[ ${EUID} -ne 0 ]]; then
     echo "must be root"
     exit 1
@@ -18,4 +17,4 @@ cp -r ./configs/blackbox_exporter /srv/blackbox_exporter
 cp -r ./configs/grafana           /srv/grafana
 
 # run docker-compose
-docker-compose -f prometheus-demo-stack.yml up -d
+docker-compose -f monitoring-demo-stack.yml up -d

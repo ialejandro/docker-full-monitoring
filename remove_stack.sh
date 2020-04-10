@@ -1,5 +1,4 @@
 #! /bin/bash
-
 if [[ ${EUID} -ne 0 ]]; then
     echo "must be root"
     exit 1
@@ -18,4 +17,4 @@ rm -rf /srv/prometheus \
     /srv/blackbox_exporter
 
 # remove docker-compose stack
-docker-compose -f prometheus-demo-stack.yml rm -s --force
+docker-compose -f monitoring-demo-stack.yml rm -s --force

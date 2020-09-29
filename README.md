@@ -7,7 +7,6 @@ It's only for develop environments and **learn how-to use Prometheus monitoring*
 
 ## Requirements
 
-* User with privileges (`sudo`). Need create some folders on `/srv`.
 * `docker-compose` installed.
 * `docker` version 18.06.0+ or above. 
 
@@ -19,7 +18,7 @@ It's only for develop environments and **learn how-to use Prometheus monitoring*
 * Started containers.
 
 ```bash
-$ sudo ./initialize_stack.sh
+$ ./initialize_stack.sh
 ```
 
 ### Remove Stack
@@ -28,7 +27,7 @@ $ sudo ./initialize_stack.sh
 * Stop and remove containers.
 
 ```bash
-$ sudo ./remove_stack.sh
+$ ./remove_stack.sh
 ```
 
 ## Services

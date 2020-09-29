@@ -5,21 +5,21 @@ services:
     container_name: prometheus
     ports: ['9090:9090']
     volumes:
-      - /srv/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
-      - /srv/prometheus/rules.d:/etc/prometheus/rules.d
+      - ${HOME}/monitoring/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ${HOME}/monitoring/prometheus/rules.d:/etc/prometheus/rules.d
   alertmanager:
     image: prom/alertmanager:latest
     container_name: alertmanager
     ports: ['9093:9093']
     volumes:
-      - /srv/alertmanager/alertmanager.yml:/etc/alertmanager/config.yml
+      - ${HOME}/monitoring/alertmanager/alertmanager.yml:/etc/alertmanager/config.yml
   grafana:
     image: grafana/grafana:latest
     container_name: grafana
     ports: ['3000:3000']
     volumes:
-      - /srv/grafana/provisioning:/etc/grafana/provisioning
-      - /srv/grafana/dashboards:/var/lib/grafana/dashboards
+      - ${HOME}/monitoring/grafana/provisioning:/etc/grafana/provisioning
+      - ${HOME}/monitoring/grafana/dashboards:/var/lib/grafana/dashboards
   node_exporter:
     image: prom/node-exporter:latest
     container_name: node_exporter
@@ -29,4 +29,4 @@ services:
     container_name: blackbox_exporter
     ports: ['9115:9115']
     volumes:
-      - /srv/blackbox_exporter/blackbox.yml:/etc/blackbox_exporter/config.yml
+      - ${HOME}/monitoring/blackbox_exporter/blackbox.yml:/etc/blackbox_exporter/config.yml
